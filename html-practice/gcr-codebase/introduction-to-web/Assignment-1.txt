@@ -1,0 +1,4 @@
+1. Explain the difference between frontend, backend, and full-stack development with
+suitable real-world examples.
+
+--> 
