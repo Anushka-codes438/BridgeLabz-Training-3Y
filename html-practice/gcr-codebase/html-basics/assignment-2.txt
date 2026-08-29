@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Web Page</title>
+</head>
+<body>
+    <h1>Garima Singh</h1>
+    <p>
+        Hi, I am Garima Singh. This is my first web page. I am learning HTML and this is a simple example of how to structure a webpage using basic HTML tags.
+    </p>
+ 
+    <hr>
+    
+    <p>
+        <a href="https://www.google.com" target="_blank">Google</a>.
+    </p>
+
+    <hr>
+
+    <h2>My Favorite Cartoon Character</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgMtcZAjd9pGohV6-3UbxnOmDC1VW6eeSRasLdEjok6w&s=10" alt="Tom & Jerry" width="300">
+
+    <hr>
+
+    <p>
+        One of my favorite hobbies is <strong>coding</strong>. I especially enjoy
+        building projects <em>late</em> at night when the ideas flow freely and
+        I can focus without distractions.
+    </p>
+ 
+    <hr>
+ 
+    <p>
+        I love exploring new technologies and building projects.<br>
+        My current focus is on <mark>Full Stack Development</mark> and
+        <mark>AI-assisted development</mark>.
+    </p>
+ 
+    <hr>
+ 
+    <blockquote>
+       Noted the imbalance between technical advancement and human wisdom.
+        <cite>- Albert Einstein</cite>
+    </blockquote>
+ 
+    <hr>
+
+ <!-- WEBPAGE -->
+
+
+    <h1>Garima Singh</h1>
+    <h2>Student</h2>
+    <h3>Hobbies: Coding, Building Projects, Dancing</h3>
+ 
+    <hr>
+ 
+    <p>
+        My favorite subject in college is <mark>Full Stack Development</mark>.
+        <small>Updated recently</small>
+    </p>
+ 
+    <hr>
+ 
+    <p>
+        I <strong>always</strong> try to write clean code. and I find it
+        <em>genuinely</em> satisfying when a project finally works as expected.
+    </p>
+ 
+    <hr>
+    <p>
+        <code>console.log("Hello World");</code>
+    </p>
+ 
+    <hr>
+ 
+    <p>
+        My tech stack includes <span>Cloud</span>,
+        <span>Full Stack Development</span>, and <span>AI-assisted development</span>,
+        which together define how I like to build projects.
+    </p>
+ 
+    <hr>
+ 
+    <p>
+        I am <strong>Garima Singh</strong>, and I am <em>passionate</em>
+        about building things.<br>
+        My current focus area is <mark>Full Stack Development</mark>.
+        <small>Last updated: 2026</small>
+    </p>
+ 
+    <hr>
+ 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+ 
+    <header>
+        <h1>Garima Singh</h1>
+    </header>
+ 
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+ 
+    <main>
+        <p>
+            Hi, I am Garima Singh. This page is a small showcase of who I am,
+            my interests, and my work as a student and builder.
+        </p>
+ 
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am a 3rd-year B.Tech CSE student at GLA University, Mathura,
+                mainly focused on Full Stack Development, and AI-assisted development.
+            </p>
+        </section>
+ 
+        <article>
+            <h2>My First Blog</h2>
+            <p>
+                This is my very first blog post. Learning HTML from scratch has
+                helped me understand how webpages are structured before I add any
+                styling or interactivity.
+            </p>
+        </article>
+    </main>
+ 
+    <aside>
+        <h2>Useful Links</h2>
+        <a href="https://github.com/garima-25" target="_blank">GitHub</a>
+    </aside>
+ 
+    <footer>
+        <p>&copy; 2025 Garima Singh</p>
+    </footer>
+ 
+
+</body>
+</html>
