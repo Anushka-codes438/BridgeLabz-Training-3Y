@@ -1,0 +1,336 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff7ed;
+    color: #333333;
+}
+
+
+/* Header */
+header {
+    background-color: #7f1d1d;
+    color: white;
+
+    padding: 20px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Header heading */
+header h1 {
+    font-size: 2rem;
+}
+
+
+/* Navigation */
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-size: 1rem;
+}
+
+
+/* Navigation hover */
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   HOME SECTION
+   Linear Gradient
+   Background Attachment Fixed
+   ========================= */
+
+.hero {
+    min-height: 80vh;
+
+    padding: 100px 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    /* Linear gradient */
+    background:
+        linear-gradient(
+            rgba(127, 29, 29, 0.75),
+            rgba(245, 158, 11, 0.75)
+        ),
+        url("https://picsum.photos/1600/900");
+
+    background-size: cover;
+    background-position: center;
+
+    /* Parallax effect */
+    background-attachment: fixed;
+}
+
+
+/* Hero heading */
+.hero h2 {
+    font-size: 4rem;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+}
+
+
+/* Hero paragraph */
+.hero p {
+    max-width: 700px;
+
+    margin: auto;
+
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   HISTORY SECTION
+   ========================= */
+
+.history {
+    padding: 80px 10%;
+
+    margin: 20px 0;
+
+    background-color: #fff7ed;
+
+    border-top: 5px solid #f59e0b;
+    border-bottom: 5px solid #f59e0b;
+}
+
+
+/* History heading */
+.history h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    margin-bottom: 25px;
+}
+
+
+/* History paragraphs */
+.history p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   PLACES SECTION
+   ========================= */
+
+.places {
+    padding: 80px 8%;
+
+    background-color: #fef3c7;
+
+    border: 2px solid #f59e0b;
+}
+
+
+/* Places heading */
+.places h2 {
+    text-align: center;
+
+    font-size: 2.8rem;
+    font-weight: 800;
+
+    margin-bottom: 40px;
+}
+
+
+/* Cards container */
+.cards {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+/* Individual cards */
+.card {
+    flex: 1;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border: 2px solid #d97706;
+
+    border-radius: 12px;
+}
+
+
+/* Card heading */
+.card h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+
+    margin-bottom: 15px;
+
+    color: #7f1d1d;
+}
+
+
+/* Card paragraph */
+.card p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CULTURE SECTION
+   Radial Gradient
+   Background Attachment Fixed
+   ========================= */
+
+.culture {
+    min-height: 60vh;
+
+    padding: 100px 10%;
+
+    color: white;
+
+    text-align: center;
+
+    /* Radial gradient */
+    background:
+        radial-gradient(
+            circle,
+            rgba(251, 191, 36, 0.85),
+            rgba(127, 29, 29, 0.95)
+        ),
+        url("https://picsum.photos/1600/800");
+
+    background-size: cover;
+    background-position: center;
+
+    /* Parallax effect */
+    background-attachment: fixed;
+}
+
+
+/* Culture heading */
+.culture h2 {
+    font-size: 3rem;
+    font-weight: 900;
+
+    margin-bottom: 25px;
+}
+
+
+/* Culture paragraph */
+.culture p {
+    max-width: 800px;
+
+    margin: 0 auto 20px;
+
+    font-size: 1.2rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    padding: 25px;
+
+    background-color: #450a0a;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media screen and (max-width: 700px) {
+
+    /* Header becomes vertical */
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+
+    /* Navigation */
+    nav a {
+        margin: 0 8px;
+    }
+
+
+    /* Hero heading */
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+
+    /* Cards become vertical */
+    .cards {
+        flex-direction: column;
+    }
+
+
+    /* Culture heading */
+    .culture h2 {
+        font-size: 2.3rem;
+    }
+}
+
+
+/* Small mobile screens */
+@media screen and (max-width: 500px) {
+
+    nav a {
+        display: inline-block;
+
+        margin: 5px;
+    }
+
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+
+    .history,
+    .places,
+    .culture {
+        padding: 60px 20px;
+    }
+}
+ 

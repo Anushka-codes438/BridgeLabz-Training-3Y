@@ -1,0 +1,260 @@
+
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+
+    /* Custom font */
+    font-family: Georgia, "Times New Roman", serif;
+
+    /* Background color */
+    background-color: #e7e5e4;
+
+    color: #292524;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   NEWSPAPER CONTAINER
+   ========================= */
+
+.newspaper {
+
+    max-width: 1100px;
+
+    /* Center the newspaper */
+    margin: 40px auto;
+
+    /*
+       Padding around the
+       main content area.
+    */
+    padding: 40px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #a8a29e;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================
+   NEWSPAPER HEADER
+   ========================= */
+
+header {
+
+    text-align: center;
+
+    padding-bottom: 20px;
+
+    border-bottom: 4px double #292524;
+}
+
+
+header h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 3rem;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+header p {
+
+    font-size: 0.95rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   ARTICLE HEADING
+   ========================= */
+
+article h2 {
+
+    /*
+       Heading spans across
+       all newspaper columns.
+    */
+    column-span: all;
+
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    font-size: 2.2rem;
+
+    font-weight: 700;
+
+    margin: 30px 0;
+}
+
+
+/* =========================
+   NEWSPAPER COLUMNS
+   ========================= */
+
+.newspaper-content {
+
+    /*
+       Creates three vertical
+       text columns.
+    */
+    column-count: 3;
+
+    /*
+       Space between columns.
+    */
+    column-gap: 35px;
+
+    /*
+       Makes text aligned
+       evenly on both sides.
+    */
+    text-align: justify;
+
+    font-size: 1rem;
+}
+
+
+/* =========================
+   PARAGRAPHS
+   ========================= */
+
+.newspaper-content p {
+
+    margin-bottom: 20px;
+
+    /*
+       Prevents a paragraph
+       from breaking awkwardly
+       between columns.
+    */
+    break-inside: avoid;
+}
+
+
+/* =========================
+   FLOAT IMAGE
+   ========================= */
+
+/*
+   Image is aligned to the
+   left using float.
+*/
+
+.newspaper-content img {
+
+    width: 45%;
+
+    float: left;
+
+    margin: 0 15px 10px 0;
+
+    border-radius: 5px;
+
+    border: 2px solid #78716c;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+
+/*
+   Tablet:
+   Two columns.
+*/
+
+@media screen and (max-width: 800px) {
+
+    .newspaper {
+
+        margin: 20px;
+
+        padding: 25px;
+    }
+
+
+    .newspaper-content {
+
+        column-count: 2;
+    }
+
+
+    header h1 {
+
+        font-size: 2.3rem;
+    }
+
+}
+
+
+/*
+   Mobile:
+   One column.
+*/
+
+@media screen and (max-width: 550px) {
+
+    .newspaper {
+
+        margin: 10px;
+
+        padding: 20px;
+    }
+
+
+    header h1 {
+
+        font-size: 1.8rem;
+    }
+
+
+    article h2 {
+
+        font-size: 1.6rem;
+    }
+
+
+    .newspaper-content {
+
+        column-count: 1;
+
+        text-align: left;
+    }
+
+
+    .newspaper-content img {
+
+        width: 50%;
+    }
+
+}
+ 

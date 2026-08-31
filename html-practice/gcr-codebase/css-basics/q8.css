@@ -1,0 +1,357 @@
+
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f1f5f9;
+
+    color: #1e293b;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+/*
+   Fixed position keeps the
+   header at the top while
+   scrolling.
+*/
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 70px;
+
+    padding: 15px 30px;
+
+    background-color: #1e293b;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+.header h1 {
+    font-size: 1.7rem;
+}
+
+
+.header p {
+    font-size: 1rem;
+}
+
+
+/* =========================
+   DASHBOARD
+   ========================= */
+
+.dashboard {
+
+    display: flex;
+
+    /*
+       Space for fixed header.
+    */
+    padding-top: 70px;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+.sidebar {
+
+    width: 240px;
+
+    /*
+       Sidebar takes full
+       available screen height.
+    */
+    min-height: calc(100vh - 70px);
+
+    padding: 30px 20px;
+
+    background-color: #334155;
+
+    color: white;
+
+    /*
+       Positioning the sidebar
+       relative to its normal place.
+    */
+    position: relative;
+}
+
+
+.sidebar h2 {
+
+    margin-bottom: 25px;
+
+    font-size: 1.5rem;
+}
+
+
+/* Sidebar navigation */
+
+.sidebar nav {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.sidebar nav a {
+
+    padding: 12px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    transition: background-color 0.3s ease;
+}
+
+
+/* Sidebar hover */
+
+.sidebar nav a:hover {
+
+    background-color: #475569;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+.main-content {
+
+    flex: 1;
+
+    padding: 40px;
+}
+
+
+.main-content > h2 {
+
+    font-size: 2rem;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CONTENT BOXES
+   ========================= */
+
+.content-boxes {
+
+    display: grid;
+
+    /*
+       Two equal columns.
+    */
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Individual content box */
+
+.content-box {
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    /*
+       Shadow effect.
+    */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+
+    /*
+       Equal spacing and smooth
+       hover animation.
+    */
+    transition: transform 0.3s ease;
+}
+
+
+/* Content box hover */
+
+.content-box:hover {
+
+    transform: translateY(-5px);
+}
+
+
+.content-box h3 {
+
+    font-size: 1.3rem;
+
+    margin-bottom: 15px;
+
+    color: #334155;
+}
+
+
+/* Large number */
+
+.number {
+
+    font-size: 2.5rem;
+
+    font-weight: bold;
+
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+
+.content-box > p:last-child {
+
+    color: #64748b;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/*
+   On smaller screens,
+   sidebar moves above
+   main content.
+*/
+
+@media screen and (max-width: 700px) {
+
+    .header {
+
+        height: auto;
+
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .dashboard {
+
+        flex-direction: column;
+
+        padding-top: 95px;
+    }
+
+
+    .sidebar {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding: 20px;
+    }
+
+
+    .sidebar nav {
+
+        flex-direction: row;
+
+        flex-wrap: wrap;
+    }
+
+
+    .sidebar nav a {
+
+        flex: 1;
+
+        min-width: 100px;
+
+        text-align: center;
+    }
+
+
+    .main-content {
+
+        padding: 25px;
+    }
+
+
+    .content-boxes {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE SCREEN
+   ========================= */
+
+@media screen and (max-width: 450px) {
+
+    .sidebar nav {
+
+        flex-direction: column;
+    }
+
+
+    .sidebar nav a {
+
+        width: 100%;
+    }
+
+
+    .main-content {
+
+        padding: 20px;
+    }
+
+}
+ 

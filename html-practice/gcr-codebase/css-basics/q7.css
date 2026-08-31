@@ -1,0 +1,257 @@
+
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #dbeafe;
+
+    color: #1e293b;
+}
+
+
+/* =========================
+   CONTACT PAGE
+   ========================= */
+
+/*
+   Flexbox is used to center
+   the form horizontally and
+   vertically.
+*/
+
+.contact-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+
+/* =========================
+   CONTACT FORM
+   ========================= */
+
+.contact-form {
+
+    width: 100%;
+
+    max-width: 550px;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border: 2px solid #bfdbfe;
+
+    border-radius: 15px;
+
+    /*
+       Subtle shadow around form.
+    */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Form heading */
+.contact-form h1 {
+
+    text-align: center;
+
+    font-size: 2.5rem;
+
+    margin-bottom: 10px;
+
+    color: #1e3a8a;
+}
+
+
+/* Form description */
+.contact-form > p {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #64748b;
+}
+
+
+/* =========================
+   FORM GROUP
+   ========================= */
+
+.form-group {
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   LABEL
+   ========================= */
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   INPUT AND TEXTAREA
+   ========================= */
+
+.form-group input,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 1rem;
+
+    background-color: #f8fafc;
+
+    color: #1e293b;
+
+    /*
+       Border around fields.
+    */
+    border: 2px solid #cbd5e1;
+
+    /*
+       Rounded corners.
+    */
+    border-radius: 8px;
+
+    /*
+       Subtle shadow.
+    */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+    /*
+       Smooth border transition.
+    */
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* =========================
+   FOCUS EFFECT
+   ========================= */
+
+/*
+   Border changes color when
+   the user clicks inside an
+   input or textarea.
+*/
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+
+/* =========================
+   TEXTAREA
+   ========================= */
+
+.form-group textarea {
+
+    resize: vertical;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 5px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+
+/* Button hover */
+button:hover {
+
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media screen and (max-width: 600px) {
+
+    .contact-page {
+
+        padding: 20px;
+    }
+
+
+    .contact-form {
+
+        padding: 25px;
+    }
+
+
+    .contact-form h1 {
+
+        font-size: 2rem;
+    }
+
+}
+ 

@@ -1,0 +1,731 @@
+ 
+/* =========================
+   RESET
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   BODY
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f8fafc;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+/*
+   Sticky positioning keeps
+   the header at the top
+   while scrolling.
+*/
+
+.header {
+
+    position: sticky;
+
+    top: 0;
+
+    width: 100%;
+
+    min-height: 70px;
+
+    padding: 15px 6%;
+
+    background-color: rgba(15, 23, 42, 0.95);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo {
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+}
+
+
+/* Navigation */
+
+.header nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+    font-size: 1rem;
+}
+
+
+/* Navigation hover */
+
+.header nav a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+/*
+   Relative positioning allows
+   child elements to be positioned
+   relative to this section.
+*/
+
+.hero {
+
+    position: relative;
+
+    min-height: 90vh;
+
+    padding: 100px 8%;
+
+    /*
+       Background image with
+       a linear gradient overlay.
+    */
+
+    background:
+        linear-gradient(
+            rgba(15, 23, 42, 0.75),
+            rgba(30, 64, 175, 0.75)
+        ),
+        url("https://picsum.photos/1600/900");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+/* Hero content */
+
+.hero-content {
+
+    /*
+       Border demonstrates
+       the CSS Box Model.
+    */
+
+    padding: 50px;
+
+    border: 2px solid rgba(255, 255, 255, 0.6);
+
+    /*
+       Outline is outside
+       the border.
+    */
+
+    outline: 5px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 15px;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* Hero heading */
+
+.hero h1 {
+
+    font-size: 3.5rem;
+
+    margin-bottom: 20px;
+}
+
+
+/* Hero paragraph */
+
+.hero p {
+
+    font-size: 1.3rem;
+
+    margin-bottom: 25px;
+}
+
+
+/* Hero button */
+
+.hero-button {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background-color: #38bdf8;
+
+    color: #0f172a;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+
+    border: 2px solid #38bdf8;
+}
+
+
+/* Button hover */
+
+.hero-button:hover {
+
+    background-color: transparent;
+
+    color: white;
+}
+
+
+/* =========================
+   ABOUT SECTION
+   ========================= */
+
+.about {
+
+    padding: 90px 8%;
+
+    background-color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+/* Two equal columns */
+
+.about-text,
+.about-image {
+
+    flex: 1;
+}
+
+
+/* About text */
+
+.about-text {
+
+    padding: 30px;
+
+    border-left: 5px solid #2563eb;
+}
+
+
+/* About heading */
+
+.about-text h2 {
+
+    font-size: 2.7rem;
+
+    margin-bottom: 20px;
+
+    color: #1e3a8a;
+}
+
+
+/* About paragraphs */
+
+.about-text p {
+
+    margin-bottom: 20px;
+
+    font-size: 1.1rem;
+}
+
+
+/* About image */
+
+.about-image img {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: 15px;
+
+    border: 3px solid #bfdbfe;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   SERVICES SECTION
+   ========================= */
+
+.services {
+
+    padding: 90px 8%;
+
+    text-align: center;
+
+    /*
+       Gradient background.
+    */
+
+    background:
+        linear-gradient(
+            135deg,
+            #eff6ff,
+            #dbeafe
+        );
+}
+
+
+/* Services heading */
+
+.services > h2 {
+
+    font-size: 2.8rem;
+
+    margin-bottom: 45px;
+
+    color: #1e3a8a;
+}
+
+
+/* Services container */
+
+.service-container {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+/* Individual service */
+
+.service {
+
+    /*
+       Relative positioning
+       is used here.
+    */
+
+    position: relative;
+
+    flex: 1;
+
+    padding: 35px;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border: 2px solid #93c5fd;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.1);
+
+    /*
+       Smooth hover effect.
+    */
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Service hover */
+
+.service:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Service heading */
+
+.service h3 {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 15px;
+
+    color: #2563eb;
+}
+
+
+/* Service paragraph */
+
+.service p {
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTACT SECTION
+   ========================= */
+
+.contact {
+
+    padding: 90px 8%;
+
+    background-color: #e0f2fe;
+}
+
+
+/* Contact heading */
+
+.contact > h2 {
+
+    text-align: center;
+
+    font-size: 2.8rem;
+
+    margin-bottom: 40px;
+
+    color: #1e3a8a;
+}
+
+
+/* Contact form */
+
+form {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border: 2px solid #bae6fd;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Form labels */
+
+form label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    margin-top: 18px;
+
+    font-weight: bold;
+}
+
+
+/* Form fields */
+
+form input,
+form textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 1rem;
+
+    border: 2px solid #cbd5e1;
+
+    border-radius: 7px;
+
+    background-color: #f8fafc;
+}
+
+
+/* Focus effect */
+
+form input:focus,
+form textarea:focus {
+
+    outline: 3px solid rgba(37, 99, 235, 0.2);
+
+    border-color: #2563eb;
+}
+
+
+/* Submit button */
+
+form button {
+
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* Button hover */
+
+form button:hover {
+
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+
+    padding: 30px;
+
+    background-color: #0f172a;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+/* =========================
+   FIXED POSITIONING
+   ========================= */
+
+/*
+   This button demonstrates
+   position: fixed.
+*/
+
+.fixed-button {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    padding: 12px 20px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+
+    z-index: 999;
+}
+
+
+.fixed-button:hover {
+
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/*
+   Tablet and mobile screens.
+*/
+
+@media screen and (max-width: 750px) {
+
+    /* Header */
+
+    .header {
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 15px;
+    }
+
+
+    .header nav a {
+
+        margin: 0 7px;
+    }
+
+
+    /* Hero */
+
+    .hero {
+
+        min-height: 80vh;
+
+        padding: 60px 20px;
+    }
+
+
+    .hero-content {
+
+        padding: 30px 20px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 2.3rem;
+    }
+
+
+    /* About */
+
+    .about {
+
+        flex-direction: column;
+
+        padding: 60px 6%;
+    }
+
+
+    .about-text,
+    .about-image {
+
+        width: 100%;
+    }
+
+
+    /* Services */
+
+    .service-container {
+
+        flex-direction: column;
+    }
+
+
+    .service {
+
+        width: 100%;
+    }
+
+
+    /* Contact */
+
+    .contact {
+
+        padding: 60px 6%;
+    }
+
+
+    form {
+
+        padding: 25px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+   ========================= */
+
+@media screen and (max-width: 500px) {
+
+    .header nav a {
+
+        font-size: 0.85rem;
+
+        margin: 0 3px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 2rem;
+    }
+
+
+    .hero p {
+
+        font-size: 1rem;
+    }
+
+
+    .services > h2,
+    .contact > h2 {
+
+        font-size: 2.2rem;
+    }
+
+
+    .fixed-button {
+
+        right: 15px;
+
+        bottom: 15px;
+
+        padding: 10px 15px;
+    }
+
+}
+ 
