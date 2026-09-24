@@ -1,0 +1,88 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #263238;
+    color: white;
+}
+
+/* Side-by-side layout */
+.comparison {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+    padding: 40px;
+}
+
+/* Figure */
+figure {
+    margin: 0;
+    width: 45%;
+    max-width: 500px;
+
+    background-color: white;
+    padding: 10px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Images */
+figure img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+/* Filtered image */
+.filtered {
+    filter: brightness(60%);
+    transition: filter 0.5s ease;
+}
+
+/* Remove filter on hover */
+.filtered:hover {
+    filter: none;
+}
+
+/* Caption */
+figcaption {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* Stack below 700px */
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+    }
+
+    figure {
+        width: 90%;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #263238;
+    color: white;
+}

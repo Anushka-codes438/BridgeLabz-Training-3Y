@@ -1,0 +1,81 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #263238;
+    color: white;
+}
+
+/* Grid layout */
+.principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 30px;
+}
+
+/* Principle box */
+.principle {
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+/* Gradient and text change on hover */
+.principle:hover {
+    background: linear-gradient(135deg, #1976d2, #7b1fa2);
+    color: white;
+
+    transform: translateY(-8px);
+}
+
+/* Code example */
+.principle code {
+    display: block;
+
+    margin-top: 20px;
+    padding: 10px;
+
+    background-color: #263238;
+    color: white;
+
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+
+    background-color: #263238;
+    color: white;
+}
+
+/* Single column below 600px */
+@media (max-width: 600px) {
+    .principles {
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+    }
+}

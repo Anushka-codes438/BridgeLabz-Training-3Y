@@ -1,0 +1,85 @@
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #263238;
+    color: white;
+}
+
+/* Grid layout */
+.cheat-sheet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px;
+}
+
+/* Topic box */
+.topic {
+    background-color: white;
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    transition: transform 0.3s ease,
+                background-color 0.3s ease;
+}
+
+/* Hover effect */
+.topic:hover {
+    transform: translateY(-5px);
+    background-color: #e3f2fd;
+}
+
+.topic h2 {
+    margin-top: 0;
+}
+
+.topic code {
+    display: block;
+    margin-top: 15px;
+
+    padding: 10px;
+
+    background-color: #263238;
+    color: white;
+
+    border-radius: 5px;
+}
+
+/* Stack below 700px */
+@media (max-width: 700px) {
+    .cheat-sheet {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .topic {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #263238;
+    color: white;
+}
