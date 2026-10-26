@@ -1,0 +1,8 @@
+/* Hover effect: lift card + deepen shadow (shadow-sm base class in HTML) */
+.product-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15) !important;
+}

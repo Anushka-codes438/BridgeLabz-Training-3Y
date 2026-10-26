@@ -1,0 +1,15 @@
+/* Slight zoom on profile picture for personality */
+img.rounded-circle {
+  transition: transform 0.3s ease;
+}
+img.rounded-circle:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons get a small lift on hover */
+.btn {
+  transition: transform 0.2s ease;
+}
+.btn:hover {
+  transform: translateY(-2px);
+}

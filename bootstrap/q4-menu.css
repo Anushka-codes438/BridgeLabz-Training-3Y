@@ -1,0 +1,9 @@
+/* Slight image polish */
+img.rounded {
+  border: 4px solid #fff;
+}
+
+/* Table row hover already handled by .table-hover, add subtle transition */
+.table tbody tr {
+  transition: background-color 0.15s ease;
+}

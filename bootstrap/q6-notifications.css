@@ -1,0 +1,9 @@
+/* Card container max width for readability on large screens */
+.card {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.alert {
+  border-left: 4px solid rgba(0, 0, 0, 0.15);
+}

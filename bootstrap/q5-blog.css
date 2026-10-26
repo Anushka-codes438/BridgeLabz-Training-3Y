@@ -1,0 +1,30 @@
+/* Override Bootstrap CSS variables for a custom purple theme */
+:root {
+  --bs-primary: #6f42c1;
+  --bs-primary-rgb: 111, 66, 193;
+  --bs-font-sans-serif: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--bs-font-sans-serif);
+  background-color: #f8f7fc;
+}
+
+header, footer {
+  background-color: var(--bs-primary);
+}
+
+/* Apply theme color to card titles and buttons */
+.card-title {
+  color: var(--bs-primary);
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+  background-color: #5a349a;
+  border-color: #5a349a;
+}
