@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Ticket Booking</title>
+</head>
+<body>
+    <h2>Book Movie Tickets</h2>
+
+    <form id="bookingForm" novalidate>
+        <label>Name:</label>
+        <input id="name" type="text"><br><br>
+
+        <label>Email:</label>
+        <input id="email" type="text"><br><br>
+
+        <label>Seats (1-10):</label>
+        <input id="seats" type="number" min="1" max="10"><br><br>
+
+        <button type="submit">Book Tickets</button>
+    </form>
+
+    <p id="message"></p>
+    <div id="ticket"></div>
+
+    <script src="q5-movie-booking.js"></script>
+</body>
+</html>
